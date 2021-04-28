@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    {% extends "base.html" %}
+    {% load static %}
+
+    {% block content %}
+
     <h1>2021 Dongguk Likelion 3rd session</h1>
-</body>
-</html>
+    <img src='{% static "images/lion.jpeg" %}'>
+    <a href="{% url 'first' %}">First</a>
+    <a href="{% url 'second' %}">Second</a>
+
+    {% endblock %}

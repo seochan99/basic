@@ -19,5 +19,7 @@ from main import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.showmain),
+    path('', views.showmain,name="show"),
+    path('first', views.first, name="first"),
+    path("second",views.second, name="second"),
 ]
