@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+<nav class=nav>
+    <ul class="nav__list">
+        <li class="nav__btn"><a class="nav__link" href="{% url  'show' %}"><p></p><i class="fas fa-home fa-2x"></i></a></li>
+        <li class="nav__btn"><a class="nav__link" href="{% url 'introduceMe'%}"><i class="far fa-file fa-2x"></i></a></li>
+        <li class="nav__btn"><a class="nav__link" href="{% url 'photoMe'%}"><i class="far fa-image fa-2x"></i></a></li>
+        <li class="nav__btn"><a class="nav__link" href="{% url 'profileMe'%}"><i class="fas fa-user fa-2x"></i></a></li>
+    </ul>
+</nav>
+
+
+<body style="text-align: center;">
+    <header>
+            <h1>Contact Or My blog</h1>
+    </header>
+    <section class="introduce">
+        <div class="name">
+            <span class="title_"> Velog :<span>
+            <span class="self">벨로그주소 </span>
+            <span class="title_"> Naver :<span>
+                <span class="self">벨로그주소 </span>
+                <span class="title_"> Velog :<span>
+                    <span class="self">벨로그주소 </span>
+        </div>
+        <div class="age">
+            <span class="title_">카카오톡:<span>
+            <span class="self">23살</span>
+        </div>
+        카카오톡 네이버블로그 벨로그 인스타그램 
+        <div class="department">
+            <span class="title_">전공/학번/학년 : <span>
+            <span class="self">멀티미디어 공학과/19학번/1학년</span>
+        </div>
+
+        <div class="farewell">
+            <h2>감사합니다 !</br>m(_ _)m</h2>
+        </div>
+
+    </section>
+
+</body>
+{% endblock %}

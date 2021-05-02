@@ -4,9 +4,12 @@ from django.shortcuts import render
 
 def showmain(request):
     return render(request, 'main/mainpage.html')
+  
+def introduceMe(request): #소개 페이지 
+    return render(request, 'main/introduce.html')
 
-def first(request):
-    return render(request, 'main/first.html')
-
-def second(request):
-    return render(request, 'main/second.html')    
+def photoMe(request): # 사진 
+    return render(request, 'main/photo.html')
+ 
+def profileMe(request): # 프로파일 !
+    return render(request, 'main/profile.html')

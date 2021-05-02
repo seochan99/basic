@@ -20,6 +20,7 @@ from main import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.showmain,name="show"),
-    path('first', views.first, name="first"),
-    path("second",views.second, name="second"),
+    path("profileMe",views.profileMe, name="profileMe"),
+    path("photoMe",views.photoMe,name="photoMe"),
+    path("introduceMe",views.introduceMe, name="introduceMe"),
 ]
