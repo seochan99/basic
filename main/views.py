@@ -13,3 +13,7 @@ def photoMe(request): # 사진
  
 def profileMe(request): # 프로파일 !
     return render(request, 'main/profile.html')
+
+def home(request):
+    userName = request.GET['name']
+    return render(request, 'main/home.html',{'userName':userName})

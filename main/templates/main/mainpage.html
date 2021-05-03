@@ -1,25 +1,12 @@
-    {% extends "base.html" %}
-    {% load static %}
-
-    {% block content %}
-    <nav class=nav>
-        <ul class="nav__list">
-            <li class="nav__btn"><a class="nav__link" href="{% url  'show' %}"><p></p><i class="fas fa-home fa-2x"></i></a></li>
-            <li class="nav__btn"><a class="nav__link" href="{% url 'introduceMe'%}"><i class="far fa-file fa-2x"></i></a></li>
-            <li class="nav__btn"><a class="nav__link" href="{% url 'photoMe'%}"><i class="far fa-image fa-2x"></i></a></li>
-            <li class="nav__btn"><a class="nav__link" href="{% url 'profileMe'%}"><i class="far fa-user fa-2x"></i></a></li>
-        </ul>
-    </nav>
-    
-
-<main class="main-title">
-    환영합니다 !! 
-</main>
-   <div class="main_introduce">
-       <h6>이 페이지를 사용하는 방법은 간단합니다 ! </h6>
-       <h6>밑에 순서대로 설명서,자기소개서,앨범,저의 프로파일 입니다.</h6>
-   </div>
-
-
-
-    {% endblock %}
+<div style="text-align: center;">
+    <br>
+    <h1>방문자의 이름을 입력해주세요!</h1>
+    <br>
+    <form action="home" >
+        <label for="nameInput">이름 : </label>
+        <input id="nameInput" name="name" required>
+        <input type="submit" value="제출">
+    </form>
+    <br>
+    <h4>제출해주시면 저의 소개가 페이지가 나온답니당!</h4>
+</div>
