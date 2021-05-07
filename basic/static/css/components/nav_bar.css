@@ -18,32 +18,14 @@
     color: #2e363e;
 }
 
-@keyframes notification{
-    0%{
-transform: none;
-    }50%{
-transform: translateY(-5px) rotateY(360deg);
-    }100%{
-transform: none;
-    }
+.nav__btn{
+    margin-top: 10px;
+}
+.user_name{
+    font-weight: 600;
 }
 
-.nav__notification{
-    position: absolute;
-    left:15px;
-    bottom: 15px;    
-    animation: notification 2s ease-in-out infinite;
-}
 
-.nav__dott{
-background-color: tomato;
-width: 6px;
-height:6px;
-border-radius:3px;
-display:flex;
-position: absolute;
-left: 30px;
-}
 @keyframes appear{
     from{
 
@@ -70,6 +52,3 @@ animation-delay: 0.5s;
 
 }
 
-a:active{
-    color: rebeccapurple;
-}
