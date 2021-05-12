@@ -12,7 +12,8 @@ class Blog(models.Model):
     def __str__(self):
         return self.title
 
-
+    def summary(self):
+        return self.body[:5] ## 적절량 짜르기 
 
 
 # 클래스 머델 생성, migrate해주기, superuser만들기, 블로그 쓰기, 블로그 제목 뜨게 만들기, 

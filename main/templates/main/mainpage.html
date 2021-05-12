@@ -16,7 +16,8 @@
     <div>
         <h3>{{blog.title}}</h3>
         {{blog.writer}}<br>
-        {{blog.body}}<br>
+        {{blog.summary}}<br>
+        <a href="{% url 'detail' blog.id %}">..자세히</a>
     </div>
     {% endfor %}
 

@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Blog
 
 # Create your views here.
@@ -19,3 +19,7 @@ def profileMe(request): # 프로파일 !
 def home(request):
     userName = request.GET['name']
     return render(request, 'main/home.html',{'userName':userName})
+
+def detail(request,id):
+    blog = get_object_or_404(Blog, pk = id)
+    return render(request,'detail.html',{"blog" : blog})
