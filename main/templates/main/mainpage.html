@@ -14,6 +14,8 @@
     <h1>글 목록</h1>
     {% for blog in blogs %}
     <div>
+        <h2><a href="{%url 'new'%}">글쓰기</a></h2>
+        <h1>글 목록</h1>
         <h3>{{blog.title}}</h3>
         {{blog.writer}}<br>
         {{blog.summary}}<br>
