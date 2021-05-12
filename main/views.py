@@ -1,9 +1,11 @@
 from django.shortcuts import render
+from .models import Blog
 
 # Create your views here.
 
 def showmain(request):
-    return render(request, 'main/mainpage.html')
+    blogs = Blog.objects.all()
+    return render(request, 'main/mainpage.html',{"blogs":blogs})
   
 def introduceMe(request): #소개 페이지 
     return render(request, 'main/introduce.html')

@@ -10,4 +10,14 @@
     </form>
     <br>
     <h4>제출해주시면 Chans Cosmos 페이지가 나온답니당~~!!~!!</h4>
+
+    <h1>글 목록</h1>
+    {% for blog in blogs %}
+    <div>
+        <h3>{{blog.title}}</h3>
+        {{blog.writer}}<br>
+        {{blog.body}}<br>
+    </div>
+    {% endfor %}
+
 </div>
